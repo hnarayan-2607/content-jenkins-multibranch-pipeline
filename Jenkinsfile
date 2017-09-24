@@ -1,5 +1,7 @@
 pipeline {
-  agent master
+  agent {
+    label 'master'
+  }
 
   environment {
     MAJOR_VERSION = 1
