@@ -37,6 +37,7 @@ pipeline {
         sh 'git pull origin'
         echo 'Checking Out Master'
         sh 'git checkout master'
+        sh 'git pull origin'
         echo "Merging Development into Master"
         sh 'git merge development'
         echo "Git Push to Origin"
